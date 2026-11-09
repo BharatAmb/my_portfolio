@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --font-manrope: "Segoe UI", Inter, Arial, sans-serif;
+  --font-playfair: Georgia, "Times New Roman", serif;
+  --background: #fbfaf5;
+  --surface: #ffffff;
+  --ink: #102218;
+  --muted: #68736d;
+  --green: #135e34;
+  --green-2: #1f7a45;
+  --sage: #dbe8d7;
+  --sage-soft: #f0f5eb;
+  --line: #e4e9e0;
+  --gold: #c39a52;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(210, 229, 208, 0.45), transparent 22rem),
+    radial-gradient(circle at 92% 8%, rgba(231, 239, 225, 0.65), transparent 24rem),
+    var(--background);
+  color: var(--ink);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #cde4cd;
+  color: #0b4325;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.shell {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.section-space {
+  padding-block: 38px;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #31543d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-label::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #5c8268;
+}
+
+.green-grid {
+  background-image:
+    linear-gradient(rgba(19, 94, 52, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 94, 52, 0.055) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.soft-card {
+  border: 1px solid rgba(24, 74, 42, 0.09);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 20px 60px rgba(34, 70, 46, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e8eee5;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent);
+  animation: shimmer 1.35s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-space {
+    padding-block: 52px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "bharat-jatav-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4004",
+    "build": "next build",
+    "start": "next start -p 4004"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "motion": "^14.10.0",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
