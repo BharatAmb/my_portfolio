@@ -66,13 +66,18 @@ export const certifications = [
 
 export const education = [
   {
-    title: "Bachelor of Computer Science",
-    place: "Srimant Madhavrao Scindia Govt. Model Science College, Gwalior",
-    period: "Jun 2021 — Jul 2025",
+    title: "Master of Computer Applications (MCA)",
+    place: "Maharana Pratap College of Technology (MPCT), Gwalior, MP",
+    period: "2026 — Present",
   },
   {
-    title: "Higher Secondary (Class XII)",
-    place: "Sahara Public Hr Sec School, Gwalior, MP",
-    period: "Mar 2021",
+    title: "Bachelor of Computer Science",
+    place: "Shrimant Madhavrao Scindia Govt. Model Science College, Gwalior",
+    period: "Jun 2021 — Jul 2025",
   },
+  // {
+  //   title: "Higher Secondary (Class XII)",
+  //   place: "Sahara Public Hr. Sec. School, Gwalior, MP",
+  //   period: "Mar 2021",
+  // },
 ];

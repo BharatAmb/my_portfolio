@@ -1,4 +1,5 @@
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = {
   title: "Bharat Jatav — Frontend Developer",
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+    <body suppressHydrationWarning>
+        {children}
+
+        <ScrollToTop />
+      </body>
     </html>
   );
 }

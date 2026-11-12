@@ -55,10 +55,7 @@ export default function ProjectCard({ project }) {
         shadow-[0_16px_38px_rgba(32,67,44,.07)]
       "
     >
-      <Link
-        href={`/aboutproject/${project.slug}`}
-        className="block"
-      >
+    <Link href={`/${project.slug}/details`} className="block">
         {/* ================= IMAGE ================= */}
 
         <div className="relative">

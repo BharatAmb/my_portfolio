@@ -33,14 +33,14 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.08} className="relative">
-          <SmartImage src="/workspace-placeholder.svg" alt="Development workspace placeholder" className="aspect-[1.55] w-full rounded-[28px]" sizes="(max-width: 1024px) 100vw, 45vw" />
-          <div className="soft-card absolute right-4 top-4 rounded-2xl p-4 sm:right-5 sm:top-5">
+          <SmartImage src="/aboutsection.png" alt="Development workspace placeholder" className="aspect-[1.55] w-full rounded-[28px]" sizes="(max-width: 1024px) 100vw, 45vw" />
+          {/* <div className="soft-card absolute right-4 top-4 rounded-2xl p-4 sm:right-5 sm:top-5">
             {["System Design", "Web Performance", "Next.js App Router", "Open for Opportunities"].map((item) => (
               <div key={item} className="flex items-center gap-2 py-1.5 text-xs font-bold text-slate-700">
                 <FiCheckCircle className="text-[#168147]" /> {item}
               </div>
             ))}
-          </div>
+          </div> */}
         </Reveal>
       </div>
     </section>
